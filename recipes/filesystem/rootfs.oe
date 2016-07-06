@@ -1,0 +1,20 @@
+COMPATIBLE_MACHINES = "bpir1"
+inherit rootfs image_bom
+
+IMAGE_BASENAME = "${MACHINE}-${DISTRO}-rootfs"
+IMAGE_FULLNAME = "${IMAGE_BASENAME}-${DATETIME}"
+DEFAULT_PREFERENCE = "3"
+
+RDEPENDS += "\
+	base-hostname \
+	base-passwd \
+	bpir1-linux \
+	kernel-modules \
+	openssh \
+	netbase \
+	util/e2fsck util/tune2fs util/mke2fs \
+	util/i2cdetect util/i2cdump util/i2cget util/i2cset \
+	ethtool tcpdump \
+	dosfstools-mkfs dosfstools-fsck \
+	"
+

@@ -1,0 +1,14 @@
+COMPATIBLE_MACHINES = "bpir1"
+
+CLASS_DEPENDS = ""
+
+addtask deploy before build
+do_deploy[recdeptask] += "DEPENDS:do_deploy"
+def do_stage(d):
+    return
+
+DEPENDS = "\
+	u-boot \
+	kernel \
+	rootfs \
+	"

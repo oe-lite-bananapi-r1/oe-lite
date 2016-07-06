@@ -1,0 +1,21 @@
+DISTRO	= "bananapir1"
+MACHINE = "bpir1"
+
+PROVIDED	 = "all"
+
+# 32-bit Linux SDK (64-bit compatible)
+SDK_CPU		 = "i686"
+SDK_OS		 = "linux-gnu"
+
+# Uncomment this to keep workdir intact after successful build
+RMWORK		 = "0"
+
+# Set this to 1 for defaulting to --relaxed or 2 for defaulting to --sloppy
+#DEFAULT_RELAX	 = "1"
+
+# Point to any available prebaked packages
+#PREBAKE_PATH	 = "${TOPDIR}/prebake"
+
+# Uncomment these to do enable parallel make
+#PARALLEL_MAKE	 = "-j 4"
+

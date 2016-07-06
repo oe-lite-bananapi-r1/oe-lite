@@ -1,0 +1,9 @@
+[submodule "meta/core"]
+	path = meta/core
+	url = git@github.com:oe-lite/core.git
+[submodule "meta/base"]
+	path = meta/base
+	url = git@github.com:oe-lite/base.git
+[submodule "lib/urlgrabber"]
+	path = lib/urlgrabber
+	url = git@github.com:oe-lite/urlgrabber.git

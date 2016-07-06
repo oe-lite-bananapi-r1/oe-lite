@@ -1,0 +1,22 @@
+inherit u-boot
+
+SRC_URI += "git://git.denx.de/u-boot.git;tag=v${PV}"
+SRC_URI += "file://bpir1_defconfig"
+
+UBOOT_IMAGE_FILENAME="u-boot-sunxi-with-spl.bin"
+
+S = "${SRCDIR}/u-boot"
+
+do_configure[prefuncs] += "do_configure_cp_config"
+
+do_configure_cp_config() {
+    cp ${SRCDIR}/bpir1_defconfig ${S}/configs/
+}
+
+do_configure () {
+    oe_runmake USE_PRIVATE_LIBGCC=yes ${USE_uboot_config}
+}
+
+do_compile () {
+    oe_runmake
+}
