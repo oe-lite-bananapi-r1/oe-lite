@@ -1,9 +1,11 @@
 [submodule "meta/core"]
 	path = meta/core
-	url = git@github.com:oe-lite/core.git
+	branch = bpir1/master
+	url = git@github.com:oe-lite-bananapi-r1/core.git
 [submodule "meta/base"]
 	path = meta/base
-	url = git@github.com:oe-lite/base.git
+	branch = bpir1/master
+	url = git@github.com:oe-lite-bananapi-r1/base.git
 [submodule "lib/urlgrabber"]
 	path = lib/urlgrabber
 	url = git@github.com:oe-lite/urlgrabber.git
