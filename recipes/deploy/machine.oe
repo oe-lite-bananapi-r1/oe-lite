@@ -9,6 +9,6 @@ def do_stage(d):
 
 DEPENDS = "\
 	u-boot \
-	kernel \
+	bootfs \
 	rootfs \
 	"

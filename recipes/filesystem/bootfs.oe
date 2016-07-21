@@ -1,0 +1,15 @@
+COMPATIBLE_MACHINES = "bpir1"
+
+inherit archive-image
+RECIPE_TYPES = "machine"
+
+IMAGE_BASENAME = "${MACHINE}-${DISTRO}-bootfs"
+IMAGE_FULLNAME = "${IMAGE_BASENAME}-${DATETIME}"
+
+#TODO:
+# u-boot script
+RDEPENDS += "\
+       u-boot-bootscript \
+       kernel \
+       kernel-dtb \
+	"
