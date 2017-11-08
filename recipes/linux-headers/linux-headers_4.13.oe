@@ -1,0 +1,2 @@
+require meta/core/recipes/linux-headers/${PN}.inc
+require meta/core/recipes/linux-headers/linux-stable.inc

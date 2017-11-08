@@ -8,8 +8,6 @@ DEFAULT_PREFERENCE = "3"
 RDEPENDS += "\
 	base-hostname \
 	base-passwd \
-	bpir1-linux \
-	kernel-modules \
 	openssh \
 	netbase \
 	util/e2fsck util/tune2fs util/mke2fs \

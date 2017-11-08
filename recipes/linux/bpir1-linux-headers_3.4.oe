@@ -1,5 +1,0 @@
-inherit kernel-headers
-require bpir1-linux.inc
-
-SRC_REV = "commit=647cf76f7d56df815ad376f5db928dabffe62dff"
-S="${SRCDIR}/BPI-Kernel4.0/linux-4.0.2"
